@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 360px;
+  margin: 120px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+input, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+button {
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+button.google {
+  background: #db4437;
+}
+
+button.outline {
+  background: transparent;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
