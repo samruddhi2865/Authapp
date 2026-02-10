@@ -1,92 +1,76 @@
-Spring Boot Authentication System
+# 🔐 Spring Boot Authentication System
 
-This project is a Spring Boot-based web application that provides a simple user registration and login system with Google OAuth authentication. It demonstrates how modern authentication mechanisms can be integrated into a Java backend using Spring Boot and Spring Security.
+A Spring Boot web application demonstrating user registration, login, and Google OAuth 2.0 authentication using Spring Security.
 
-🚀 Features
+## 🚀 Features
+- User registration and login forms
+- Google OAuth 2.0 authentication
+- Spring Security for secure auth
+- Simple HTML/CSS frontend
+- Maven-based project structure
+- Beginner-friendly implementation
 
-User Registration and Login
+## 🛠️ Tech Stack
+| Category      | Technologies                     |
+|---------------|----------------------------------|
+| **Backend**   | Java, Spring Boot               |
+| **Security**  | Spring Security, OAuth 2.0      |
+| **Frontend**  | HTML, CSS                       |
+| **Build**     | Maven                           |
 
-Google Authentication (OAuth 2.0)
+## 📂 Project Structure
+```
+spring-boot-auth/
+├── src/
+│   └── main/
+│       ├── java/           # Spring Boot source code
+│       └── resources/      # HTML, CSS, configs
+├── pom.xml                # Maven dependencies
+├── mvnw / mvnw.cmd        # Maven wrapper
+└── README.md              # Documentation
+```
 
-Secure authentication using Spring Security
+## 🔐 Authentication Flow
+1. **Form Login**: Register/login with email/password
+2. **Google OAuth**: Authenticate via Google account
+3. **Spring Security**: Handles auth & authorization
+4. **Redirect**: Successful login → secured dashboard
 
-Simple frontend using HTML and CSS
+## ⚙️ Setup Instructions
 
-Maven-based project structure
+### Prerequisites
+- Java 17+
+- Maven 3.6+
 
-Clean and beginner-friendly implementation
+### Run Project
+```bash
+# Clone repository
+git clone https://github.com/samruddhi2865/Authapp.git
+cd spring-boot-auth
 
-🛠️ Tech Stack
-
-Backend: Java, Spring Boot
-
-Security: Spring Security, OAuth 2.0 (Google Authentication)
-
-Frontend: HTML, CSS
-
-Build Tool: Maven
-
-📂 Project Structure
-├── src
-│   ├── main
-│   │   ├── java        # Spring Boot application source code
-│   │   └── resources  # HTML, CSS, and configuration files
-├── pom.xml            # Maven dependencies
-├── mvnw / mvnw.cmd    # Maven wrapper
-└── README.md
-
-🔐 Authentication Flow
-
-User can register or log in using a simple form.
-
-Google OAuth allows users to authenticate using their Google account.
-
-Spring Security manages authentication and authorization.
-
-On successful login, the user is redirected to the secured area of the application.
-
-⚙️ How to Run the Project
-
-Clone the repository:
-
-git clone https://github.com/your-username/your-repo-name.git
-
-
-Navigate to the project directory:
-
-cd your-repo-name
-
-
-Run the application:
-
+# Start application
 mvn spring-boot:run
+```
 
+**Visit:** `http://localhost:8080`
 
-Open in browser:
+**Google OAuth Setup:**
+1. Create Google OAuth credentials at [Google Cloud Console](https://console.cloud.google.com/)
+2. Add `CLIENT_ID` and `CLIENT_SECRET` to `application.properties`
 
-http://localhost:8080
+## 🎯 Learning Outcomes
+- Spring Boot project structure
+- Spring Security authentication
+- Google OAuth 2.0 integration
+- Frontend-backend connection
 
-🎯 Learning Outcome
+## 🔮 Future Enhancements
+- Database user persistence
+- Role-based access control
+- Bootstrap/React UI
+- Logout & session management
+- JWT token support
 
-Understanding Spring Boot project structure
-
-Implementing authentication using Spring Security
-
-Integrating Google OAuth in a backend application
-
-Connecting frontend login pages with backend logic
-
-📌 Future Improvements
-
-Add database integration for storing users
-
-Implement role-based authentication
-
-Improve UI using Bootstrap or React
-
-Add logout and session management features
-
-👩‍💻 Author
-
-Samruddhi Kshirsagar
+## 👩‍💻 Author
+**Samruddhi Kshirsagar**  
 B.Tech CSE (AIML)
